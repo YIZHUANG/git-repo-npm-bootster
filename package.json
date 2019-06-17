@@ -1,0 +1,45 @@
+{
+  "name": "git-repo-npm-bootster",
+  "version": "1.0.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bin/index.js",
+    "delete": "node src/utils/deleteAllFiles.js"
+  },
+  "bin": {
+    "boost-git-repo": "bin/index.js"
+  },
+  "_moduleAliases": {
+    "@root": ".",
+    "@utils": "src/utils",
+    "@buildFiles": "src/buildFiles",
+    "@questions": "src/questions"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YIZHUANG/git-repo-npm-bootster.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YIZHUANG/git-repo-npm-bootster/issues"
+  },
+  "author": {
+    "name": "YI ZHUANG",
+    "url": "https://yizhuang.fi/"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "auto-changelog": "^1.13.0",
+    "date-fns": "^1.30.1",
+    "ejs": "^2.6.2",
+    "git-repo-name": "^1.0.1",
+    "inquirer": "^6.3.1",
+    "load-json-file": "^6.1.0",
+    "lodash": "^4.17.11",
+    "module-alias": "^2.2.0",
+    "ora": "^3.4.0",
+    "prompts": "^2.1.0",
+    "readme-md-generator": "^0.3.0"
+  }
+}
