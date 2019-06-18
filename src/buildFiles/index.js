@@ -4,6 +4,7 @@ const buildLicense = require("./buildLicense");
 const buildNpmIgnore = require("./buildNpmIgnore");
 const buildReadme = require("./buildReadme");
 const buildTslint = require("./buildTslint");
+const buildEslint = require("./buildEslint");
 const buildPackageJson = require("./buildPackageJson");
 const buildChangeLog = require("./buildChangeLog");
 const filesToCreate = {
@@ -14,7 +15,8 @@ const filesToCreate = {
   "README.md": buildReadme,
   ".gitattributes": buildLanguage,
   "tslint.json": buildTslint,
-  "package.json": buildPackageJson
+  "package.json": buildPackageJson,
+  ".eslintrc": buildEslint
 };
 
 module.exports = filesToCreate;

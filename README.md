@@ -1,18 +1,27 @@
-This package is buit on top of [readme-md-generator](https://github.com/kefranabg/readme-md-generator), currently under development.
+<h1 align="center">Welcome to git-repo-npm-bootster 👋</h1>
+<p>
+<a href="https://badge.fury.io/js/git-repo-npm-bootster"><img src="https://badge.fury.io/js/git-repo-npm-bootster.svg" alt="npm version" height="18"></a>
+  <img src="https://img.shields.io/badge/version-1.0.2-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/YIZHUANG/git-repo-npm-bootster#readme">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" target="_blank" />
+  </a>
+  <a href="https://github.com/YIZHUANG/git-repo-npm-bootster/graphs/commit-activity">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" target="_blank" />
+  </a>
+  <a href="https://github.com/YIZHUANG/git-repo-npm-bootster/blob/master/LICENSE">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" target="_blank" />
+  </a>
+</p>
 
-[![npm version](https://badge.fury.io/js/git-repo-npm-bootster.svg)](https://www.npmjs.com/package/git-repo-npm-bootster)
+> A cli to that automatically generate all the needed files to make your repo or npm package look good and reach the 100 quality score
+
+### 🏠 [Homepage](https://github.com/YIZHUANG/git-repo-npm-bootster#readme)
 
 ## Idea
 
-It does the minumum to create all the needed files for your repo/npm package to look good and get your package to full quality score as well but still needs a bit of manual fine tuning on some of the stuff such as "keywords" etc.
+As a developer you should focus on writing code more instead spending a lot of time on writing nice docs at the beginning.
 
-## Install Locally
-
-```sh
-npm install git-repo-npm-bootster --save-dev
-```
-
-## Install Globally.
+## Install
 
 ```sh
 npm install git-repo-npm-bootster -g
@@ -23,3 +32,28 @@ npm install git-repo-npm-bootster -g
 ```sh
 boost-git-repo
 ```
+
+## Run tests
+
+```sh
+npm run test
+```
+
+## Author
+
+👤 **Yi Zhuang**
+
+- Github: [@YIZHUANG](https://github.com/YIZHUANG)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/YIZHUANG/git-repo-npm-bootster/contributing.md).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+Copyright © 2019 [Yi Zhuang](https://github.com/YIZHUANG).<br />
+This project is [MIT](https://github.com/YIZHUANG/git-repo-npm-bootster/blob/master/LICENSE) licensed.

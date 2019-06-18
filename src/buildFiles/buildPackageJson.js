@@ -25,11 +25,10 @@ async function buildPackageJson(answers = {}) {
     bugs: {
       url: `${repositoryUrl}/issues`
     },
-    keywords: [framework, programingLanguage].filter(value => Boolean(value)),
-    author: {
-      name: authorName,
-      url: `https://github.com/${githubUsername}`
-    },
+    keywords: [framework, programingLanguage].filter(
+      value => Boolean(value) && value !== "None"
+    ),
+    author: authorName,
     license: "MIT",
     homepage: projectDocumentationUrl || projectHomepage || repositoryUrl
   };

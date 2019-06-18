@@ -1,5 +1,5 @@
 const fs = require("fs");
-
+const boxen = require("boxen");
 const filesToCreate = require("@buildFiles");
 
 const getProjectInfos = require("@utils/getInfo");
@@ -24,12 +24,19 @@ async function doWork() {
       promises.push(fn);
     } else {
       if (existingFiles.indexOf(fileToCreate) < 0) {
-        const fn = () => filesToCreate[fileToCreate](info)
+        const fn = () => filesToCreate[fileToCreate](info);
         promises.push(fn);
       }
     }
   }
   await Promise.all(promises.map(task => task()));
+  console.log(
+    boxen("All the necessary files have been set up!", {
+      padding: 1,
+      margin: 1,
+      borderStyle: "double"
+    })
+  );
 }
 
 module.exports = doWork;

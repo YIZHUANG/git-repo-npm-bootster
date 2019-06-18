@@ -1,16 +1,9 @@
 const writeFile = require("./writeFile");
+const generateContribute = require("generate-contributing");
 
-async function buildContribute() {
-  const template = `
-  # Contributing
-
-Send a PR or raise an issue to:
-
-- Report/Fix a bug.
-- Suggest/Improve the documentation
-- Request/Develop a new feature.
-  `;
-  await writeFile("contributing.md", template);
+async function buildContribute(answer) {
+  const content = await generateContribute(answer);
+  await writeFile("contributing.md", content);
 }
 
 module.exports = buildContribute;

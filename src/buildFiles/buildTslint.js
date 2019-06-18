@@ -26,8 +26,8 @@ async function buildScript() {
   await writeFile("package.json", JSON.stringify(newPackageJson, null, 2));
 }
 async function buildTslint(answers) {
-  const { packageManager, programingLanguage } = answers;
-  if (programingLanguage === "TypeScript") {
+  const { packageManager, programingLanguage, linter } = answers;
+  if (linter === "Tslint") {
     try {
       const spinner = ora("Setting up tslint").start();
       await install("tslint", true, packageManager);

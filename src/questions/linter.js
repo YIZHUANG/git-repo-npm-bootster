@@ -3,5 +3,5 @@ module.exports = () => ({
   message: "Linter of the repo",
   name: "linter",
   default: "",
-  choices: ["Eslint", "Tslint"]
+  choices: ["Eslint", "Tslint", "None"]
 });
