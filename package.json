@@ -1,6 +1,6 @@
 {
   "name": "git-repo-npm-bootster",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A cli to that automatically generate all the needed files to make your repo or npm package look good and reach the 100 quality score ",
   "main": "index.js",
   "scripts": {
